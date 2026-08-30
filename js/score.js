@@ -1,4 +1,4 @@
-import { anime, scrambleText } from "https://cdn.jsdelivr.net/npm/animejs@4.0.0/+esm"
+import { animate, scrambleText } from "https://cdn.jsdelivr.net/npm/animejs@4.0.0/+esm"
 
 export function initScoreAnim() {
   var btn = document.querySelector(".primary-button");
@@ -7,7 +7,7 @@ export function initScoreAnim() {
 
   btn.addEventListener("click", function () {
     animate(scoreEl, {
-    innerHTML: scrambleText({ chars: "0-9"}),
+      innerHTML: scrambleText({ chars: "0-9" }),
       duration: 1500,
     });
   });
